@@ -1,7 +1,22 @@
-<h1>Express</h1>
-<ul>
-{{#each list}}
-<li>{{this}}</li>
-{{/each}}
-</ul>
+<div class="container">
+    <h1>{{title}}</h1>
+    <ul class="boyNames">
+        {{#each names}}
+        {{#if isBoy}}
+        <li class="{{this.gender}}">
+            {{this.rank}}. {{this.name}}
+        </li>
+        {{/if}}
+        {{/each}}
+    </ul>
 
+    <ul class="girlNames">
+        {{#each names}}
+        {{#if isGirl}}
+        <li class="{{this.gender}}">
+            {{this.rank}}. {{this.name}}
+        </li>
+        {{/if}}
+        {{/each}}
+    </ul>
+</div>
