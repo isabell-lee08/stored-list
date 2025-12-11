@@ -1,22 +1,15 @@
-<div class="container">
-    <h1>{{title}}</h1>
-    <ul class="boyNames">
-        {{#each names}}
-        {{#if isBoy}}
-        <li class="{{this.gender}}">
-            {{this.rank}}. {{this.name}}
-        </li>
-        {{/if}}
-        {{/each}}
-    </ul>
+<h1>{{title}}</h1>
 
-    <ul class="girlNames">
-        {{#each names}}
-        {{#if isGirl}}
-        <li class="{{this.gender}}">
-            {{this.rank}}. {{this.name}}
-        </li>
-        {{/if}}
-        {{/each}}
+<div class="container">
+    <ul id="list" class="names">
     </ul>
 </div>
+
+<div id="form">
+    <p>Click on a name to select/deselect it.</p>
+    <input id="text" placeholder="Add a name" />
+    <button id="add-item-button">Add</button>
+
+</div>
+
+<script src="javascripts/script.js"></script>

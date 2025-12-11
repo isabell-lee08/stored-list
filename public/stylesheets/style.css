@@ -7,54 +7,44 @@ body {
 
   padding: 0;
   margin: 0;
-  width: 100vw;
-  height: 80vh;
+  height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .container {
-  padding: 1em;
-  display: grid;
-  grid-template:
-    'heading heading'
-    'boyNames girlNames';
+  flex: 0 0 100%;
+  
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
-  grid-area: heading;
-  width: 10em;
   text-align: center;
-  color: #52696c;
+  color: #121d1e;
 }
 
-.boy {
-  color: #3888c5;
-}
-
-.girl {
-  color: #e4638e;
-}
-
-.boyNames {
-  grid-area: boyNames;
-  background: aliceblue;
+.names {
+  background: rgb(199, 215, 222);
   border-radius: 1em;
-}
+  color: rgb(54, 59, 87);
 
-.girlNames {
-  grid-area: girlNames;
-  background: rgb(255, 240, 243);
-  border-radius: 1em;
+  width: 15em;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 ul {
-  padding: 1em;
-  margin: .5em;
+  list-style: none;
 }
 
 li {
-  padding: 1em 0em;
-  list-style: none;
+  padding: 1em;
+}
+
+.highlighted {
+  color: white;
 }

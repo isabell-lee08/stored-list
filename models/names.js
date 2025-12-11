@@ -5,7 +5,8 @@ const namesSchema = new mongoose.Schema({
   gender: String,
   rank: String,
   isBoy: Boolean,
-  isGirl: Boolean
+  isGirl: Boolean,
+  isHighlighted: Boolean
 });
 
 module.exports = mongoose.model('Users', namesSchema);
